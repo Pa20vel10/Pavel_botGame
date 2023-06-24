@@ -14,7 +14,6 @@ bot = telebot.TeleBot("6211715643:AAE33s5Vc18BIswqKLjLSf6KM74DpSwN3AA")
 @bot.message_handler(commands=['start', 'help', 'start the game'])
 def start(message):
     text = (message.text).strip('/')
-    bot.send_message(message.chat.id, data.get(text))
 
 
 bot.infinity_polling()
